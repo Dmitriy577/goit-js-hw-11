@@ -23,25 +23,21 @@ const newApiServer = new FethApiServes();
 
 const searchForm = document.querySelector('#search-form');
 const gallery = document.querySelector('.gallery');
-// const clickBtn = document.querySelector('.load-more'); //btn load-more
 const btnSubmit = document.querySelector('button[type="submit"]');
 const jsGuard = document.querySelector('.js-guard');
 disabledBtnSearch();
 
 searchForm.addEventListener('submit', startScript);
-// clickBtn.addEventListener('click', httpsRequest); //btn load-more
 
 function startScript(e) {
   disabledBtnSearch();
   e.preventDefault();
 
-  // clickBtn.classList.remove('is-hiden'); //btn load-more
   removeGallery();
   newApiServer.query = e.currentTarget.elements.searchQuery.value;
   newApiServer.resetPege();
   httpsRequest();
   e.target.reset();
-  // Notiflix.Notify.success(`Hooray! We found ${newApiServer.valueInput}.`);
 }
 
 async function httpsRequest() {
@@ -61,7 +57,6 @@ async function httpsRequest() {
     Notiflix.Notify.info(
       `We're sorry, but you've reached the end of search results.`
     );
-    // clickBtn.classList.add('is-hiden'); //btn load-more
   }
 }
 

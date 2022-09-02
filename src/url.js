@@ -1,6 +1,5 @@
 import axios from 'axios';
 const axios = require('axios');
-// import value from './index.js';
 
 export default class NewApiServer {
   constructor() {
@@ -12,7 +11,6 @@ export default class NewApiServer {
   async fethApiServes() {
     const URL = 'https://pixabay.com/api/';
     const KEY = '29453019-5a69b6c7b2f01a070c80deb0c';
-
     const resp = await axios.get(`${URL}`, {
       params: {
         key: KEY,
