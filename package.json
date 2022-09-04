@@ -2,17 +2,17 @@
   "name": "goit-js-hw-11",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://syniepolskyi.github.io/goit-js-hw-11",
+  "homepage": "https://Dmitriy577.github.io/goit-js-hw-11",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-11/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/syniepolskyi/goit-js-hw-11"
+    "url": "git+https://github.com/Dmitriy577/goit-js-hw-11"
   },
   "keywords": [],
-  "author": "Ihor Syniepolskyi <syniepolskyi@yahoo.com>",
+  "author": "Dmitriy Matviychuk <matdimav@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "axios": "*",
