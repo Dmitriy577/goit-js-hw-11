@@ -1,11 +1,9 @@
 import { Notify } from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-
 import { refs } from './js/refs';
-import { getGallerydData } from './js/getGalleryData';
-
-import createMarkUp from './templates/imgCardMarkUp.hbs';
+import { getGallerydData } from './api/gallery';
+import cards from './templates/cards.hbs';
 
 const searchParams = {
   params: {
@@ -75,3 +73,4 @@ async function galleryUpdate(enteries) {
   refs.gallery.insertAdjacentHTML('beforeend', createMarkUp(res.data));
   gallery.refresh();
 }
+

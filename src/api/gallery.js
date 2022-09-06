@@ -1,5 +1,5 @@
 import { Notify } from 'notiflix';
-import { searchApi } from '../api/searchApi';
+import { searchApi } from './search';
 
 export async function getGallerydData(params) {
   let res = null;
