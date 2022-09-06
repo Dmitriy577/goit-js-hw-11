@@ -1,9 +1,9 @@
 import { Notify } from 'notiflix';
-import { searchApi } from './search';
+import { search } from './search';
 
 export async function getGallerydData(params) {
   try {
-    res = await searchApi.get('', params);
+    res = await search.get('', params);
   } catch (err) {
     Notify.failure('Something went wrong');
     return
